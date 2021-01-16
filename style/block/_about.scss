@@ -1,0 +1,27 @@
+.section-wrapper:first-of-type{
+  padding-top: 120px;
+  position: relative;
+}
+.section-wrapper:first-of-type::after{
+  content: "";
+  width: 100vw;
+  height: 160px;
+  display: block;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.about-bg{
+  background-image: url(./images/about-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 110px 0 110px 50px;
+}
+.about-content{
+  max-width: 590px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background-color:rgba(255,255,255,.95);
+}

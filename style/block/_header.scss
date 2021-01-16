@@ -1,0 +1,39 @@
+.site-title{
+  width: 260px;
+  position: fixed;
+  top: 38px;
+  left: 4vw;
+  z-index: 1;
+}
+.site-title.black svg path{
+  fill: #333;
+  transition: fill .3s;
+}
+.header-nav{
+  font-weight: bold;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 36.1vw;
+  text-align: center;
+  padding: 120px 0 0;
+  background-color:rgba(34,34,34,.95);
+  z-index: 2;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform .3s,opacity .3s;
+}
+.nav-item{
+  margin-bottom: 30px;
+}
+.nav-item:first-of-type{
+  margin-bottom: 40px;
+}
+.nav-item:last-of-type{
+  margin-bottom: 0;
+}
+.header-nav a{
+  color: #fff;
+}

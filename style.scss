@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// base
+@import "./style/foudation/reset";
+@import "./style/foudation/base";
+@import "./style/foudation/mixin";
+@import "./style/foudation/variables";
+// layout
+@import "./style/block/header";
+@import "./style/block/footer";
+// block
+@import "./style/block/fv";
+@import "./style/block/burger";
+@import "./style/block/about";
+@import "./style/block/news";
+@import "./style/block/works";
+@import "./style/block/topics";
+@import "./style/block/contact";
+@import "./style/block/btn";
+@import "./style/block/slide";
