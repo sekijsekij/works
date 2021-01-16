@@ -5,6 +5,10 @@
 	padding-bottom: 12px;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 30px;
+
+	@include mq(md) {
+		margin-bottom: 20px;
+	}
 }
 .topics-date {
 	color: #cecece;
@@ -15,4 +19,15 @@
 	color: #333;
 	font-size: 1.4rem;
 	font-weight: bold;
+
+	@include mq(md) {
+		font-size: 1.2em;
+	}
+}
+.ml-auto {
+	margin-left: auto;
+	font-size: 1.6rem;
+	@include mq(md) {
+		margin-left: 0;
+	}
 }

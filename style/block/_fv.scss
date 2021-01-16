@@ -26,6 +26,7 @@
 	right: 0;
 	transform: translate(50%, -50%);
 	color: #fff;
+
 	@include mq(md) {
 		right: -15%;
 		transform: translate(0, -50%);
@@ -34,15 +35,29 @@
 .copy_jp {
 	font-size: 2rem;
 	margin-bottom: 4px;
+	right: -15%;
+	transform: translate(0,-50%);
+	
+	@include mq(md) {
+		font-size: 1.6rem;
+	}
 }
 .copy_company {
 	font-size: 2rem;
 	margin-bottom: 10px;
 	font-weight: bold;
+
+	@include mq(md) {
+		font-size: 1.6rem;
+	}
 }
 .main-copy {
 	font-size: 7.2rem;
 	line-height: 1.2;
 	font-weight: bold;
 	text-transform: uppercase;
+
+	@include mq(md) {
+		font-size: 5.4rem;
+	}
 }
