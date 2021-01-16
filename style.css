@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
  * http://cssreset.com
@@ -349,7 +348,6 @@ button {
   text-transform: uppercase;
 }
 
-/* ハンバーガーボタン（メニューが開いていないとき） */
 .burger-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +396,6 @@ button {
   margin-left: 5px;
 }
 
-/* ハンバーガーボタン（メニューが開いたとき） */
 .bar.cross.bar_top {
   -webkit-transform: translateY(2px) rotate(30deg);
           transform: translateY(2px) rotate(30deg);
@@ -423,7 +420,6 @@ button {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-/* ハンバーガーメニューが開いたとき */
 body.noscroll {
   overflow: hidden;
 }

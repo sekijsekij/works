@@ -8,7 +8,10 @@ html{
 body{
   font-size: 1.6rem;
   font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
-  color: #333;
+	color: #333;
+	@include mq(md) {
+		font-size: 1.4rem;
+	}
 }
 .bg-wrapper {
 	overflow: hidden;
@@ -37,7 +40,10 @@ button{
 
 
 .section-wrapper{
-  padding: 60px 0;
+	padding: 60px 0;
+	@include mq(md) {
+		padding: 40px 0;
+	}
 }
 .flex-box{
   display: flex;

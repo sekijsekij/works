@@ -1,44 +1,48 @@
-.fv{
-  height: 100vh;
+.fv {
+	height: 100vh;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #222;
+		width: 50%;
+		height: 100%;
+		z-index: -1;
+	}
 }
-.fv::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #222;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
+.kv-wrapper {
+	height: 86.5%;
+	width: 76.4%;
+	background-image: url(./images/kv-img.jpg);
+	background-size: cover;
+	background-position: center 0;
+	position: relative;
 }
-.kv-wrapper{
-  height: 86.5%;
-  width: 76.4%;
-  background-image: url(./images/kv-img.jpg);
-  background-size: cover;
-  background-position: center 0;
-  position: relative;
+.copy-wrapper {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(50%, -50%);
+	color: #fff;
+	@include mq(md) {
+		right: -15%;
+		transform: translate(0, -50%);
+	}
 }
-.copy-wrapper{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%,-50%);
-  color: #fff;
+.copy_jp {
+	font-size: 2rem;
+	margin-bottom: 4px;
 }
-.copy_jp{
-  font-size: 2rem;
-  margin-bottom: 4px;
+.copy_company {
+	font-size: 2rem;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
-.copy_company{
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.main-copy{
-  font-size: 7.2rem;
-  line-height: 1.2;
-  font-weight: bold;
-  text-transform: uppercase;
+.main-copy {
+	font-size: 7.2rem;
+	line-height: 1.2;
+	font-weight: bold;
+	text-transform: uppercase;
 }

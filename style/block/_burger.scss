@@ -1,11 +1,13 @@
-/* ハンバーガーボタン（メニューが開いていないとき） */
 .burger-btn{
   display: flex;
   align-items: center;
   position: fixed;
   top: 38px;
   right: 4vw;
-  z-index: 3;
+	z-index: 3;
+	@include mq(md) {
+		top: 28px;
+	}
 }
 .bar{
   display: block;
@@ -31,7 +33,6 @@
   font-weight: bold;
   margin-left: 5px;
 }
-/* ハンバーガーボタン（メニューが開いたとき） */
 .bar.cross.bar_top{
   transform: translateY(2px)rotate(30deg);
   transition: transform .3s;
@@ -45,7 +46,6 @@
   transition: transform .3s;
 }
 
-/* ハンバーガーメニューが開いたとき */
 body.noscroll{
   overflow: hidden;
 }
